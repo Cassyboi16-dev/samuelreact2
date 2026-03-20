@@ -40,39 +40,39 @@ export default function Home() {
 
 
 
-  return (
-    <div>
-      Hello World!
-      <div className="flex items-center justify-center gap-10">
-        <button 
-        onClick={()=> setCount(count + 1)}
-        className="bg-orange-600 text-amber-50 text-xl p-3 rounded-2xl hover:bg-amber-400">
-          Update
-        </button>  
-       
-        <button 
-        // it decreases by 2
-        onClick={()=> updateHandle2()}
-        className="bg-orange-600 text-amber-50 text-xl p-3 rounded-2xl hover:bg-amber-400">
-          Decrease - 2
-        </button>        
-        <button
-        onClick={() => handleUpdate()} 
-        // onClick={()=> setCount(count - 1)}
-        className="bg-orange-600 text-amber-50 text-xl p-3 rounded-2xl hover:bg-amber-400">
-          Decrease
-        </button>        
-        <p className="text-7xl">{count}</p>
-        
-        <button 
-        onClick={() => numToggle()}
-        className="p-3 bg-amber-900 rounded-2xl text-amber-50">Toggle</button>
-        <p className="text-5xl bg-amber-400 px-3 py-3 rounded-2xl">{toggle}</p>     
-        <button 
-        onClick={() => numCountDown()}
-        className="p-3 bg-amber-900 rounded-2xl text-amber-50">Count Down</button>
-        <p className="text-5xl bg-amber-400 px-3 py-3 rounded-2xl">{countDown}</p>     
-      </div>
+return (
+  <div>
+    Hello World!
+    <div className="flex items-center justify-center gap-10">
+      <button 
+      onClick={()=> setCount(count + 1)}
+      className="bg-orange-600 text-amber-50 text-xl p-3 rounded-2xl hover:bg-amber-400">
+        Update
+      </button>  
+     
+      <button 
+      // it decreases by 2
+      onClick={()=> updateHandle2()}
+      className="bg-orange-600 text-amber-50 text-xl p-3 rounded-2xl hover:bg-amber-400">
+        Decrease - 2
+      </button>        
+      <button
+      onClick={() => handleUpdate()} 
+      // onClick={()=> setCount(count - 1)}
+      className="bg-orange-600 text-amber-50 text-xl p-3 rounded-2xl hover:bg-amber-400">
+        Decrease
+      </button>        
+      <p className="text-7xl">{count}</p>
+      
+      <button 
+      onClick={() => numToggle()}
+      className="p-3 bg-amber-900 rounded-2xl text-amber-50">Toggle</button>
+      <p className="text-5xl bg-amber-400 px-3 py-3 rounded-2xl">{toggle}</p>     
+      <button 
+      onClick={() => numCountDown()}
+      className="p-3 bg-amber-900 rounded-2xl text-amber-50">Count Down</button>
+      <p className="text-5xl bg-amber-400 px-3 py-3 rounded-2xl">{countDown}</p>     
     </div>
-  );
+  </div>
+);
 }
