@@ -1,13 +1,13 @@
 "use client";
 import {useEffect, useState} from "react"
-import Countdown from "./assignment";
+
 export default function Home() {
   const [count, setCount] = useState(0)
   const handleUpdate = () => {
     setCount(count - 1)
     if (count == 0){
       setCount(0)
-      return
+      return 0;
     }
   }
   const updateHandle2 = () => {
@@ -41,7 +41,7 @@ export default function Home() {
 
 
 return (
-  <div>
+  <div className="grid-cols-2">
     Hello World!
     <div className="flex items-center justify-center gap-10">
       <button 
