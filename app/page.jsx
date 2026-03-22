@@ -41,7 +41,7 @@ export default function Home() {
 
 
 return (
-  <div className="grid-cols-2">
+  <div className="grid-cols-2 text-4xl">
     Hello World!
     <div className="flex items-center justify-center gap-10">
       <button 
