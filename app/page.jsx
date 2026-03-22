@@ -14,7 +14,7 @@ export default function Home() {
     setCount(count - 2)
     if (count == 0){
       setCount(0)
-      return
+      return 0;
     }
   }
    
